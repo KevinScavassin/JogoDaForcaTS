@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+<body>
+    <div class="quadroJogo">
+        <h1 id="title">Selecione um assunto para iniciar o jogo</h1>
+        <div class="buttonOption" id="buttonOption">
+            <button class="animais" onclick="selectCategory('animais');changeColorSelected(this);">Animais</button>
+            <button class="paises" onclick="selectCategory('paises');changeColorSelected(this);">Países</button>
+            <button class="comidas" onclick="selectCategory('comidas');changeColorSelected(this);">Comidas</button>
+        </div>  
+        <div class="buttonLetters" id="buttonLetters"></div>
+        <div class="dashesWord" id="dashesWord"></div>
+        <canvas id="canvas"></canvas>
+        <div class="buttonPlay" id="buttonPlay">
+            <button class="newGame" id="newGame">New Game</button>
+        </div>
+    </div>
+</body>
+<script src="../dist/js/script.js"></script>
+</html>
